@@ -49,15 +49,15 @@ function gerarMedia () {
 function classificar () {
     const numero = Number(document.getElementById('numero-item4').value)
     const resultado = document.getElementById('resultado-item4')
-    // const imparOuPar = (numero) / 2 == 0 
     let revelar
 
-    if(numero / 2 === 0 ){
+    if(numero % 2 === 0 ){
         revelar = ('Par!!')
     }else{
-        revelar = ('Ímpar')
+        revelar = ('Ímpar!!')
     }
 
+    resultado.textContent = revelar
 }
 
 
